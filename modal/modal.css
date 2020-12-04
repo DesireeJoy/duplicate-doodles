@@ -1,0 +1,13 @@
+@import url("../modal/__space/modal__space.css");
+@import url("../modal/modal__link/modal__link.css");
+@import url("../modal/__pic/modal__pic.css");
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(128, 128, 128, 0.8);
+}

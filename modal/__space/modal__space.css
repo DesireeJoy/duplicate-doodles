@@ -1,0 +1,15 @@
+.modal__space {
+  width: 25%;
+  height: 25%;
+  background-color: gainsboro;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}

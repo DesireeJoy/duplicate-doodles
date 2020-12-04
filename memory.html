@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="memory.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <meta name="description" content="Duplicate Doodles" />
     <meta name="keywords" content="HTML and CSS" />
     <meta name="author" content="Desiree Bradish" />
@@ -12,13 +14,36 @@
   <body>
     <div class="body">
       <h1 class='title'>Duplicate Doodles</h3>
-      <ul class="grid__list"></ul>
+        <ul class='grid'>
+
+
+        </ul>
+<!-- Modal Window for Win -->
+    <div class='modal'>
+      <div class='modal__space'>
+        <p>You Won!</p>
+        <Img class='modal__pic' src='./images/bigfoot.jpg' />
+        <a class = 'modal__link' href='memory.html'>
+        Play Again</a>
+      </div>
     </div>
+
+
+        <!-- Template for Cards -->
+        <template id='cardTemplate'>
+          <li class='grid__card' value='' id=''>
+
+            <button class='grid__flip'>Flip It</button>
+          </li>
+        
+        </template>
+<script src='initcards.js'></script>
+    <script src='memory.js'></script>
   </body>
 </html>
 
 <template id="cardTemplate">
-  <li class="grid__card">
+z
     <button class="grid__flip">IMG</button>
   </li>
 </template>
