@@ -44,8 +44,8 @@ function flipCard(ele) {
   const flip = ele
     .querySelector(".grid__flip")
     .addEventListener("click", function (evt) {
-      console.log(cardImage.id);
-      console.log(card1);
+      evt.preventDefault();
+      cardButton.disabled = true;
       if (card1.includes(cardImage.id)) {
         winPopup.classList.add("modal_visible");
         cardImage.style.backgroundImage =
