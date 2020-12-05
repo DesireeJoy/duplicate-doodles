@@ -9,9 +9,32 @@ let card1 = [];
 
 let i = "1";
 
+function shuffle(array) {
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 // Set Cards Up Twice at the beginning
 function setCards() {
-  initialCards.forEach((element) => {
+  const newArray = initialCards.concat(initialCards);
+  console.log(newArray);
+  const initialCards2 = shuffle(newArray);
+  initialCards2.forEach((element) => {
     const cardElement = createCard({
       name: element.name,
       link: element.link,
@@ -63,5 +86,4 @@ function addCard(card) {
   grid.append(card);
 }
 
-setCards();
 setCards();
