@@ -18,15 +18,12 @@
 
 <div class='userBox'>
 <ul class='listUL'> 
-  <li class='userName'>
-    Name: none 
-  </li>
+
   <li class='gamesWonCont' id='gamesWonCont'>
-    Games Won: <span class='gamesWon'>0</span>
+    Matches: <span class='gamesWon'>0</span>
   </li>
 
   <div>
-    <button name='changeBtn' type='click' class='changeName'>Change Name</button>
     <input type="button" onclick="refreshPage()" value="Reset" class='resetGame'/>
   </div>
 </div>
@@ -49,12 +46,15 @@
 
     <!-- Modal Window for Change Name -->
 <div class='changeNameWhole'>
-  <form class='changeNameModal'>
+  <form class='changeNameModal' id='changeNameModal' name='changeNameModal'>
     <label for='newName'>New Name:</label>
-    <input type='text' minlength="2" maxlength="10" class='newName' name='newName'>
-    <button type="submit"  class='changeNameNow'>Change</button>
+    <input type='text' minlength="2" maxlength="10" class='newName' name='newName' id='newName'>
+    <button type="submit"  class='changeNameNow' id='changeNameNow' name='changeNameNow'>Change</button>
    
   </form>
+
+
+
 </div>
         <!-- Template for Cards -->
         <template id='cardTemplate'>
