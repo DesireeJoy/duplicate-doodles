@@ -1,11 +1,11 @@
 .modal__space {
-  width: 25%;
-  height: 25%;
+  width: 300px;
+  height: 300px;
   background-color: gainsboro;
   margin: auto;
   padding: 25px;
   text-align: center;
-  font-size: 35px;
+  font-size: 22px;
   font-weight: bold;
   margin: 50px auto;
   display: flex;

@@ -14,6 +14,25 @@
   </head>
   <body>
     <div class="body">
+<!-- User info Area -->
+
+<div class='userBox'>
+<ul class='listUL'> 
+  <li class='userName'>
+    Name: none 
+  </li>
+  <li class='gamesWonCont' id='gamesWonCont'>
+    Games Won: <span class='gamesWon'>0</span>
+  </li>
+
+  <div>
+    <button name='changeBtn' type='click' class='changeName'>Change Name</button>
+    <input type="button" onclick="refreshPage()" value="Reset" class='resetGame'/>
+  </div>
+</div>
+
+
+
       <h1 class='title'>Duplicate Doodles</h3>
         <ul class='grid'>
 
@@ -24,12 +43,19 @@
       <div class='modal__space'>
         <p>You Won!</p>
         <Img class='modal__pic' src='./images/bigfoot.jpg' />
-        <a class = 'modal__link' href='memory.html'>
-        Play Again</a>
+        <input type='button'class ='modal__link' value='Play Again'>
       </div>
     </div>
 
-
+    <!-- Modal Window for Change Name -->
+<div class='changeNameWhole'>
+  <form class='changeNameModal'>
+    <label for='newName'>New Name:</label>
+    <input type='text' minlength="2" maxlength="10" class='newName' name='newName'>
+    <button type="submit"  class='changeNameNow'>Change</button>
+   
+  </form>
+</div>
         <!-- Template for Cards -->
         <template id='cardTemplate'>
           <li class='grid__card' value='' id=''>
@@ -38,14 +64,14 @@
           </li>
         
         </template>
+
+
+
+
+
        
 <script src='initcards.js'></script>
     <script src='memory.js'></script>
   </body>
 </html>
 
-<template id="cardTemplate">
-z
-    <button class="grid__flip">IMG</button>
-  </li>
-</template>
