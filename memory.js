@@ -4,16 +4,11 @@ const grid = document.querySelector(".grid");
 const cardTemplate = document.querySelector("#cardTemplate").content;
 const winPopup = document.querySelector(".modal");
 const popupImage = winPopup.querySelector(".modal__pic");
-const changeBtn = document.querySelector(".changeName");
-const changePopup = document.querySelector(".changeNameWhole");
+
 const gamesWonAmt = document.querySelector(".gamesWon");
 const nameSelector = document.querySelector(".userName");
 const cardSelector = document.querySelector(".grid__card");
 const replayBtn = document.querySelector(".modal__link");
-
-const nameForm = document.forms.changeNameModal;
-const name = nameForm.elements.newName;
-const changeNameBtn = nameForm.elements.changeNameNow;
 
 let card1 = [];
 
