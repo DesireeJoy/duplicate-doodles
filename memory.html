@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="memory.css" />
-    <link rel='stylesheet' href='normalize.css'/>
+    <link rel="stylesheet" type="text/css" href="./pages/memory.css" />
+    <link rel="stylesheet" type="text/css" href='./pages/normalize.css' />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <meta name="description" content="Duplicate Doodles" />
@@ -24,7 +24,7 @@
   </li>
 
   <div>
-    <input type="button" onclick="refreshPage()" value="Reset" class='resetGame'/>
+    <input type="button" onclick="window.location.reload();" value="Reset" class='resetGame'/>
   </div>
 </div>
 
@@ -38,7 +38,7 @@
 <!-- Modal Window for Match -->
     <div class='modal'>
       <div class='modal__space'>
-        <p>You Won!</p>
+        <p>It's a match!</p>
         <Img class='modal__pic' src='./images/bigfoot.jpg' />
         <input type='button'class ='modal__link' value='Play Again'>
       </div>
@@ -58,8 +58,8 @@
 
 
        
-<script src='initcards.js'></script>
-    <script src='memory.js'></script>
+<script src='./scripts/initcards.js'></script>
+    <script type="module" src="./scripts/memory.js" async></script>
   </body>
 </html>
 

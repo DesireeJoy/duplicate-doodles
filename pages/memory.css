@@ -1,7 +1,8 @@
-@import url("./grid/grid.css");
-@import url("./grid/__card/grid__card.css");
-@import url("./grid/__flip/grid__flip.css");
-@import url("./modal/modal.css");
+@import url("../grid/grid.css");
+@import url("../grid/__card/grid__card.css");
+@import url("../grid/__flip/grid__flip.css");
+@import url("../modal/modal.css");
+@import url("../grid/__card/__rotate/card__rotate.css");
 
 * {
   padding: 0;
@@ -41,17 +42,6 @@
   overflow: none;
   padding: 10px;
 }
-
-.changeName {
-  background-color: yellow;
-  font-size: 12px;
-  line-height: 12px;
-  max-height: 24px;
-  margin-bottom: 5px;
-}
-.userName {
-  font-weight: bold;
-}
 .gamesWon {
   color: green;
 }
@@ -74,24 +64,5 @@
   padding: 0;
   margin: 5px;
   height: 30px;
-}
-.changeNameWhole {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: rgba(128, 128, 128, 0.8);
-}
-.newName {
-  background-color: white;
-  margin: 5px;
-}
-.changeNameNow {
-  font-size: 12px;
-  line-height: 12px;
-  max-height: 24px;
-  background-color: palevioletred;
-  color: white;
+  outline: none;
 }
