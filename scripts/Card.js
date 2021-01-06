@@ -44,7 +44,7 @@ export class Card {
             console.log(lastCard);
             myCard.style.backgroundImage = "url('images/cardBack.png')";
             flipBack(currentCard, saveLast);
-          }, 1000);
+          }, 500);
         }
       }
     });
