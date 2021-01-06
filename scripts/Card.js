@@ -12,10 +12,6 @@ export class Card {
     const cardMatch = (gridList.querySelector(".grid__card").id = "this._id");
   }
   _flipCard(evt) {
-    console.log(this._id); //Original 1-16
-    console.log(this._link); // url link
-    console.log(this._name); // description filename
-
     const cardButton = this._cardElement.querySelector(".grid__flip");
     const flip = cardButton.addEventListener("click", function (evt) {
       evt.preventDefault();
@@ -44,7 +40,7 @@ export class Card {
             console.log(lastCard);
             myCard.style.backgroundImage = "url('images/cardBack.png')";
             flipBack(currentCard, saveLast);
-          }, 500);
+          }, 250);
         }
       }
     });
